@@ -433,95 +433,77 @@
     </section>
 
     <!-- Registration section -->
-    <section>
-      <h2>Register Now</h2>
-      <p>Secure your place in the next prestigious cohort.</p>
+    <section class="register-section" id="registerSection">
+        <h2>Register Now</h2>
+        <p class="subtitle">Secure your place in the next prestigious cohort.</p>
 
-      <div>
-        <div>
-          <label for="fullName">Full Legal Name</label>
-          <input type="text" id="fullName" placeholder="e.g., Julian Thorne" />
-          <div id="nameError">Please enter your full legal name.</div>
+        <div class="register-card">
+            <div class="form-group" id="nameGroup">
+                <label for="fullName">Full Legal Name</label>
+                <input type="text" id="fullName" placeholder="e.g., Julian Thorne">
+                <div class="error-msg" id="nameError">Please enter your full name.</div>
+            </div>
+
+            <div class="form-group" id="courseGroup">
+                <label for="courseSelect">Academic Path</label>
+                <select id="courseSelect">
+                    <option value="">Select your course</option>
+                    <option value="Classical Humanities & Philosophy">Classical Humanities & Philosophy</option>
+                    <option value="Digital Architecture Design">Digital Architecture Design</option>
+                    <option value="Strategic Economic Analysis">Strategic Economic Analysis</option>
+                    <option value="Computational Mathematics">Computational Mathematics</option>
+                    <option value="Biomedical Engineering">Biomedical Engineering</option>
+                </select>
+                <div class="error-msg" id="courseError">Please select an academic path.</div>
+            </div>
+
+            <button class="btn-register" id="registerBtn">Complete Registration</button>
         </div>
-
-        <div>
-          <label for="courseSelect">Academic Path</label>
-          <select id="courseSelect">
-            <option value="">Select your course</option>
-            <option value="Classical Humanities & Philosophy">
-              Classical Humanities & Philosophy
-            </option>
-            <option value="Digital Architecture Design">
-              Digital Architecture Design
-            </option>
-            <option value="Strategic Economic Analysis">
-              Strategic Economic Analysis
-            </option>
-            <option value="Computational Mathematics">
-              Computational Mathematics
-            </option>
-            <option value="Biomedical Engineering">
-              Biomedical Engineering
-            </option>
-          </select>
-          <div id="courseError">Please select an academic path.</div>
-        </div>
-
-        <button>Complete Registration</button>
-      </div>
     </section>
 
+
     <!-- COHORT LIST -->
-    <section>
-      <div>
-        <div>
-          <h2>Current Cohort</h2>
-          <p>Real-time enrollment registry for the Fall 2024 term.</p>
+     <section class="cohort-section">
+        <div class="cohort-header">
+            <div>
+                <h2>Current Cohort</h2>
+                <p class="cohort-sub">Real-time enrollment registry for the Fall 2024 term.</p>
+            </div>
+            <div class="cohort-count">
+                <span class="count-icon">👥</span>
+                <span id="enrollCount">0</span> Active Enrollees
+            </div>
         </div>
 
-        <div>
-          <span>👥</span>
-          <span>0</span> Active Enrollees
+        <div class="cohort-controls">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search by name or course...">
+            <select class="filter-select" id="filterSelect">
+                <option value="all">All Courses</option>
+                <option value="Classical Humanities & Philosophy">Humanities & Philosophy</option>
+                <option value="Digital Architecture Design">Architecture Design</option>
+                <option value="Strategic Economic Analysis">Economic Analysis</option>
+                <option value="Computational Mathematics">Computational Math</option>
+                <option value="Biomedical Engineering">Biomedical Eng.</option>
+            </select>
+            <button class="sort-btn" id="sortBtn">Sort A–Z</button>
         </div>
-      </div>
 
-      <div>
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Search by name or course..."
-        />
-        <select id="filterSelect">
-          <option value="all">All Courses</option>
-          <option value="Classical Humanities & Philosophy">
-            Humanities & Philosophy
-          </option>
-          <option value="Digital Architecture Design">
-            Architecture Design
-          </option>
-          <option value="Strategic Economic Analysis">Economic Analysis</option>
-          <option value="Computational Mathematics">Computational Math</option>
-          <option value="Biomedical Engineering">Biomedical Eng.</option>
-        </select>
-        <button>Sort A-Z</button>
-      </div>
-
-      <div id="studentList">
-        <!-- Dynamic student entries will be rendered here -->
-      </div>
+        <div class="student-list" id="studentList">
+            <!-- Students rendered here by JS -->
+        </div>
     </section>
 
     <!-- FOOTER -->
 
-    <footer>
-      <div>Skills School</div>
-      <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Contact Support</a></li>
-        <li><a href="#">Academic Calendar</a></li>
-      </ul>
-      <div>&copy; 2026 Skills School. All rights reserved.</div>
+    <footer class="footer">
+        <div class="footer-brand">Academia Atelier</div>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Academic Calendar</a></li>
+        </ul>
+        <div>&copy; 2024 The Intellectual Canvas. All rights reserved.</div>
     </footer>
 
     <script src="main.js"></script>
