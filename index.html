@@ -3,37 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Skills School</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav>
-      <div>Skills School</div>
-      <ul>
+    <nav class="navbar">
+      <div class="navbar-brand">Skills School</div>
+      <ul class="navbar-links">
         <li><a href="#">Curriculum</a></li>
         <li><a href="#">Admissions</a></li>
         <li><a href="#">Scholarships</a></li>
         <li><a href="#">Campus</a></li>
       </ul>
-      <button>Enroll Now</button>
+      <button class="btn-enroll">Enroll Now</button>
     </nav>
 
     <!-- HERO SECTION -->
 
-    <section>
-      <div>
-        <span>Scholar Blueprint</span>
-        <h1>Architecting the Future of <span>Intellectual Growth</span></h1>
-        <p>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-badge">Scholar Blueprint</span>
+        <h1>
+          Architecting the Future of
+          <span class="accent">Intellectual Growth</span>
+        </h1>
+        <p class="hero-description">
           A curated path for the modern scholar. Enroll today in our exclusive
           2024 cohort and gain access to a network of high-end academic
           resources and mentorship.
         </p>
-        <button>Begin Enrollment <span>&rarr;</span></button>
+        <button class="btn-begin" id="beginBtn">
+          Begin Enrollment <span>&rarr;</span>
+        </button>
       </div>
-      <div>
-        <div>
+      <div class="hero-visual">
+        <div class="hero-image-container">
           <svg
             class="hero-illustration"
             viewBox="0 0 480 360"
@@ -412,11 +422,11 @@
             </g>
           </svg>
         </div>
-        <div>
-          <div>🎓</div>
+        <div class="stat-badge">
+          <div class="start-icon">🎓</div>
           <div>
-            <div>Curated Excellence</div>
-            <div>4.95 Student Satisfaction</div>
+            <div class="stat-label">Curated Excellence</div>
+            <div class="stat-sub">4.95 Student Satisfaction</div>
           </div>
         </div>
       </div>
@@ -504,14 +514,14 @@
     <!-- FOOTER -->
 
     <footer>
-        <div>Skills School</div>
-        <ul>
-             <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Contact Support</a></li>
-            <li><a href="#">Academic Calendar</a></li>
-        </ul>
-            <div>&copy; 2026 Skills School. All rights reserved.</div>
+      <div>Skills School</div>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Support</a></li>
+        <li><a href="#">Academic Calendar</a></li>
+      </ul>
+      <div>&copy; 2026 Skills School. All rights reserved.</div>
     </footer>
 
     <script src="main.js"></script>
